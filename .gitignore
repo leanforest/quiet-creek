@@ -1,0 +1,39 @@
+# 依赖与构建产物
+node_modules/
+/dist/
+/output/
+.vite/
+
+# 浏览器自动化临时文件
+.playwright-cli/
+
+# 本地环境变量（保留示例配置）
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# 日志
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Python 缓存与虚拟环境
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Blender 自动备份（保留 .blend 源文件）
+*.blend[0-9]*
+
+# 编辑器与系统临时文件
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Desktop.ini
