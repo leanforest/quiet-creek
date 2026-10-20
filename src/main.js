@@ -113,7 +113,7 @@ async function init() {
   creekDetails = addCreekDetails(scene, landscape.rockPositions);
   optics = createLens(renderer, scene, camera);
   resize();
-  const cottage = await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).loadAsync('/models/cottage.glb');
+  const cottage = await new GLTFLoader().setMeshoptDecoder(MeshoptDecoder).loadAsync(`${import.meta.env.BASE_URL}models/cottage.glb`);
   cottage.scene.name = 'Blender cottage and vaulted stone canal';
   cottage.scene.traverse(object => {
     if (!object.isMesh) return;

@@ -20,6 +20,12 @@ npm run preview
 
 `dist/` 是可独立部署的静态构建产物。运行时所有模型、纹理和脚本均在本地，不依赖在线素材服务。
 
+## GitHub Pages 部署
+
+在仓库的 Settings → Pages 中，将 Source 设为 GitHub Actions。推送到 `main` 后，工作流自动安装依赖、构建并发布 `dist/`；也可在 Actions 中手动运行“部署 GitHub Pages”。部署地址为 https://leanforest.github.io/quiet-creek/。
+
+`npm run build:pages` 使用 `/quiet-creek/` 作为资源基础路径。可运行 `node node_modules/vite/bin/vite.js preview --mode github-pages`，访问终端地址下的 `/quiet-creek/` 路径预览。普通 `npm run dev`、`npm run build` 和 `npm run preview` 仍使用根路径。
+
 ## 交互
 
 - 拖动：环顾；滚轮：沿溪前后漫步；WASD：移动；Shift：加速。
